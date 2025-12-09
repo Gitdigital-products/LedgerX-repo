@@ -1,0 +1,45 @@
+# LedgerX Governance Configuration
+
+# 🔑 Secrets (centralized in service app)
+secrets:
+  github_token: "${GITHUB_TOKEN}"   # Injected via environment variable
+  audit_key: "${AUDIT_KEY}"         # Example placeholder
+
+# 🏷️ Tagging rules
+tags:
+  compliance: ["audit", "security", "least-privilege"]
+  ownership:
+    - repo: "LedgerX-repo"
+      app: "LedgerX"
+      owner: "@Gitdigital-products/ledgerx-team"
+  environments:
+    - name: "production"
+      labels: ["stable", "secure"]
+    - name: "staging"
+      labels: ["testing", "pre-release"]
+
+# 📊 Repo → App mapping
+apps:
+  LedgerX:
+    repos:
+      - "LedgerX-repo"
+      - "LedgerX-utils"
+    description: "Governance-aware ledger service"
+    compliance_level: "strict"
+
+  FinanceX:
+    repos:
+      - "FinanceX-repo"
+    description: "Financial automation suite"
+    compliance_level: "moderate"
+
+# 🕒 Cron jobs
+cron:
+  daily_scan: "0 2 * * *"   # 2 AM UTC
+  weekly_audit: "0 3 * * 0" # Sundays at 3 AM UTC
+
+# 📦 Logging
+logging:
+  path: "audit/logs/"
+  format: "json"
+  retention_days: 30
