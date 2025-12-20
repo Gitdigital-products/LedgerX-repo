@@ -223,9 +223,9 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 
 📞 Contact
 
-Your Name - your.email@example.com
+Your Name - ricks.online.business420@gmail.com
 
-Project Link: https://github.com/yourusername/ledger-x
+Project Link: https://github.com/GitDigital-Products/ledger-x
 
 🙏 Acknowledgments
 
