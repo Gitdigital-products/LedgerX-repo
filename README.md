@@ -281,3 +281,18 @@ Solution:Clear cache: cd ios && pod deintegrate && pod install
 ---
 
 ⭐ Star this repo if you find it useful! ⭐
+# LedgerX
+
+**Mission:** LedgerX is an accounting and billing SaaS designed for B2B startups and digital product companies. It provides automated invoicing, financial reporting, and revenue tracking to simplify back-office operations. *(Stage: Active Development)*
+
+## 🎯 PHASE 1 - CLARITY & SCOPE
+**Parent Initiative:** Org-wide Clarity & Core Infra
+**Objective:** Transform this from a code repository into a defined product unit with a clear path to becoming the organization's potential primary revenue driver.
+
+### Immediate Actions:
+1.  **Define MVP Scope:** Clarify the minimum feature set for a usable billing product (e.g., create invoice, process payment, dashboard).
+2.  **Set Up Tracking:** Create a GitHub Project or use Issues with labels (`epic`, `task`) to break down the MVP.
+3.  **Secure Pipeline:** Ensure the CI/CD workflow (using internal `Checkout` & `Setup-node` actions) includes linting, testing, and a staged deployment process.
+
+**Owner:** *[Assign Product/Tech Lead]*
+**Roadmap Link:** See the central organizational roadmap in [gitdigital-products.io](https://github.com/Gitdigital-products/gitdigital-products.io)
